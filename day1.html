@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 1 - 抵达乌鲁木齐 | 新疆6日自驾游攻略</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">DAY 1 - 抵达乌鲁木齐</h1>
+            <p class="hero-subtitle">凌晨抵达 · 酒店休息 · 租车熟悉环境 · 国际大巴扎</p>
+            <div class="hero-info">
+                <div class="info-item">
+                    <span class="info-icon">📅</span>
+                    <span>周三</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🌤️</span>
+                    <span>15-25°C</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">✈️</span>
+                    <span>抵达日</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </header>
+
+
+    <!-- Sidebar Toggle Button -->
+    <button class="sidebar-toggle" id="sidebarToggle">
+        <span class="toggle-icon">☰</span>
+    </button>
+
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3 class="sidebar-title">DAY 1 导航</h3>
+            <button class="sidebar-close" id="sidebarClose">×</button>
+        </div>
+        
+        <div class="sidebar-content">
+            <!-- Day Navigation -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-section-title">其他天数</h4>
+                <nav class="sidebar-days">
+                    <a href="day1.html" class="sidebar-day-link active">
+                        <div class="sidebar-day-number">DAY 1</div>
+                        <div class="sidebar-day-desc">抵达乌市</div>
+                    </a>
+                    <a href="day2.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 2</div>
+                        <div class="sidebar-day-desc">天山大峡谷</div>
+                    </a>
+                    <a href="day3.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 3</div>
+                        <div class="sidebar-day-desc">赛里木湖</div>
+                    </a>
+                    <a href="day4.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 4</div>
+                        <div class="sidebar-day-desc">独山子峡谷</div>
+                    </a>
+                    <a href="day5.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 5</div>
+                        <div class="sidebar-day-desc">吐鲁番</div>
+                    </a>
+                    <a href="day6.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 6</div>
+                        <div class="sidebar-day-desc">返程</div>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Page Sections -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-section-title">页面内容</h4>
+                <nav class="sidebar-nav">
+                    <a href="#timeline" class="sidebar-link">
+                        <span class="sidebar-icon">⏰</span>
+                        <span class="sidebar-text">时间安排</span>
+                    </a>
+                    <a href="#dining" class="sidebar-link">
+                        <span class="sidebar-icon">🍽️</span>
+                        <span class="sidebar-text">餐饮推荐</span>
+                    </a>
+                    <a href="#photography" class="sidebar-link">
+                        <span class="sidebar-icon">📸</span>
+                        <span class="sidebar-text">拍照攻略</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-wrapper" id="mainWrapper">
+        
+        <!-- Day Content -->
+        <section class="day-section">
+            <div class="container">
+                <!-- Day Card -->
+                <div class="day-card expanded" id="day1">
+                    <div class="day-header">
+                        <div class="day-number">DAY 1</div>
+                        <div class="day-date">周三</div>
+                        <div class="weather-info">
+                            <span class="weather-icon">🌤️</span>
+                            <span>15-25°C</span>
+                        </div>
+                    </div>
+                    <div class="day-content">
+                        <div class="day-summary">
+                            <h3 class="day-title">抵达乌鲁木齐 ✈️</h3>
+                            <div class="day-brief">凌晨抵达 → 酒店休息 → 租车熟悉环境 → 国际大巴扎</div>
+                        </div>
+                        
+                        <div class="day-details active" id="day1-details">
+                            <!-- 路线概览 -->
+                            <div class="route-overview">
+                                <div class="route-item">
+                                    <span class="route-icon">✈️</span>
+                                    <span>天山国际机场</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">🏨</span>
+                                    <span>市区酒店</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">🛒</span>
+                                    <span>国际大巴扎</span>
+                                </div>
+                            </div>
+
+                            <div class="timeline" id="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-time">01:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>抵达天山国际机场</strong>
+                                        <div class="sub-details">
+                                            <p>📍 <strong>接机方式：</strong></p>
+                                            <ul>
+                                                <li>网约车：滴滴/高德（约30-45元）</li>
+                                                <li>出租车：正规出租车（约35-50元）</li>
+                                                <li>机场大巴：6:30开始运营，凌晨无服务</li>
+                                            </ul>
+                                            <p>🚗 <strong>到市区距离：</strong>约17公里，30分钟车程</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-time">02:00-10:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>酒店入住休息</strong>
+                                        <div class="sub-details">
+                                            <p>🏨 <strong>入住酒店：</strong></p>
+                                            <ul>
+                                                <li><strong>维也纳酒店(乌鲁木齐铁路局科学院店)</strong> - ☎️ 0991-4877777</li>
+                                                <li>地址：新市区北京南路40号（科学院附近），24小时前台</li>
+                                                <li>价格：约280-380元/晚</li>
+                                                <li>特色：商务型酒店，停车方便，设施齐全</li>
+                                                <li>🚗 <strong>停车：</strong>酒店提供免费停车场</li>
+                                            </ul>
+                                            <p>💤 <strong>休息建议：</strong>补充睡眠，调整时差（新疆比内地慢2小时）</p>
+                                            <p>🗺️ <strong>位置优势：</strong>距离天山大峡谷更近，自驾出行便利</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">14:00-16:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>租车+熟悉路况</strong>
+                                        <div class="sub-details">
+                                            <p>🚗 <strong>租车公司推荐：</strong></p>
+                                            <ul>
+                                                <li><strong>一嗨租车</strong> - 北京南路门店（距酒店800米） ☎️ 400-888-1188</li>
+                                                <li><strong>神州租车</strong> - 科学院店（距酒店500米） ☎️ 400-616-6666</li>
+                                                <li><strong>携程租车</strong> - 新市区门店（距酒店1公里） ☎️ 400-619-9999</li>
+                                                <li><strong>车型推荐：</strong>大众途观L、本田CRV、哈弗H6等SUV</li>
+                                                <li><strong>费用：</strong>350-600元/天（含基本保险）</li>
+                                            </ul>
+                                            <p>📋 <strong>必备证件：</strong>身份证、驾驶证、信用卡</p>
+                                            <p>🅿️ <strong>取车便利：</strong>就近取车，无需长途跑腿</p>
+                                            <div class="important-note">
+                                                ⚠️ <strong>重要：</strong>强烈建议购买全险，新疆路况复杂。建议选择带导航的车型或租用GPS设备
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">17:00-20:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>国际大巴扎体验</strong>
+                                        <div class="sub-details">
+                                            <p>📍 <strong>位置：</strong>天山区解放南路8号（距维也纳酒店约8公里，车程15分钟）</p>
+                                            <p>🚗 <strong>自驾路线：</strong>北京南路→南湖东路→河滩快速路→解放南路</p>
+                                            <p>🍽️ <strong>必吃美食：</strong></p>
+                                            <ul>
+                                                <li><strong>阿布拉的囊</strong> - 各种新疆囊类</li>
+                                                <li><strong>羊肉串</strong> - 50元/10串，现烤现吃</li>
+                                                <li><strong>抓饭</strong> - 25-35元/份，推荐羊肉抓饭</li>
+                                                <li><strong>烤包子</strong> - 5元/个，外酥内嫩</li>
+                                                <li><strong>酸奶疙瘩</strong> - 特色小食，15元/袋</li>
+                                            </ul>
+                                            <p>🛍️ <strong>购物推荐：</strong>和田玉、薰衣草制品、葡萄干</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">20:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>返回酒店休息</strong>
+                                        <div class="sub-details">
+                                            <p>💤 <strong>早睡提醒：</strong>明天需要早起，建议22:00前休息</p>
+                                            <p>📱 <strong>准备工作：</strong>下载离线地图，检查相机电量</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 餐饮推荐 -->
+                            <div class="dining-section" id="dining">
+                                <h4 class="section-subtitle">🍽️ 今日餐饮推荐</h4>
+                                <div class="restaurant-grid">
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-name">丝绸之路餐厅</div>
+                                        <div class="restaurant-info">午餐推荐 · 人均60元</div>
+                                        <div class="restaurant-address">📍 北京南路科学院对面（距酒店200米）</div>
+                                        <div class="restaurant-dishes">招牌：大盘鸡、拌面、烤羊排</div>
+                                    </div>
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-name">大巴扎美食广场</div>
+                                        <div class="restaurant-info">晚餐推荐 · 人均80元</div>
+                                        <div class="restaurant-address">📍 国际大巴扎3楼（从酒店车程15分钟）</div>
+                                        <div class="restaurant-dishes">招牌：烤全羊、手抓饭</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 拍照攻略 -->
+                            <div class="photo-section" id="photography">
+                                <h4 class="section-subtitle">📸 拍照攻略</h4>
+                                <div class="photo-spots">
+                                    <div class="photo-spot">
+                                        <div class="spot-name">大巴扎建筑群</div>
+                                        <div class="spot-time">最佳时间：17:00-19:00（黄金时段）</div>
+                                        <div class="spot-tip">💡 建议：站在观光塔俯拍全景</div>
+                                    </div>
+                                    <div class="photo-spot">
+                                        <div class="spot-name">民族服饰体验</div>
+                                        <div class="spot-time">全天可拍</div>
+                                        <div class="spot-tip">💡 建议：租借维吾尔族传统服装（50元/套）</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="day-tips">
+                                <div class="tips-grid">
+                                    <div class="tip-item">
+                                        <span class="tip-icon">💡</span>
+                                        <span><strong>时差提醒：</strong>新疆比内地时间慢2小时</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">🌡️</span>
+                                        <span><strong>穿衣建议：</strong>薄外套+长裤，昼夜温差大</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">📱</span>
+                                        <span><strong>网络：</strong>建议开通疆内流量包</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">🆔</span>
+                                        <span><strong>证件：</strong>身份证随身携带，景区需要安检</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day Navigation -->
+                <div class="day-navigation">
+                    <a href="index.html" class="nav-btn prev">
+                        <span class="nav-icon">←</span>
+                        <span class="nav-text">返回首页</span>
+                    </a>
+                    <a href="day2.html" class="nav-btn next">
+                        <span class="nav-text">DAY 2 天山大峡谷</span>
+                        <span class="nav-icon">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>🌟 DAY 1 完成，准备明天的精彩旅程</h3>
+                <p>安全驾驶，享受旅程中的每一个瞬间</p>
+                <div class="footer-info">
+                    <span>📱 移动端优化</span>
+                    <span>🗺️ 详细攻略</span>
+                    <span>📸 摄影友好</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

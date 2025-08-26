@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 4 - 赛里木湖深度摄影 → 返回乌鲁木齐 | 新疆6日自驾游攻略</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">DAY 4 - 赛里木湖深度摄影 → 返回乌鲁木齐</h1>
+            <p class="hero-subtitle">日出摄影 · 环湖自驾 · 返程乌鲁木齐 · 晚餐休息</p>
+            <div class="hero-info">
+                <div class="info-item">
+                    <span class="info-icon">📅</span>
+                    <span>周六</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">☀️</span>
+                    <span>5-15°C</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🌅</span>
+                    <span>摄影重点</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </header>
+
+
+    <!-- Sidebar Toggle Button -->
+    <button class="sidebar-toggle" id="sidebarToggle">
+        <span class="toggle-icon">☰</span>
+    </button>
+
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3 class="sidebar-title">DAY 4 导航</h3>
+            <button class="sidebar-close" id="sidebarClose">×</button>
+        </div>
+        
+        <div class="sidebar-content">
+            <!-- Day Navigation -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-section-title">其他天数</h4>
+                <nav class="sidebar-days">
+                    <a href="day1.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 1</div>
+                        <div class="sidebar-day-desc">抵达乌市</div>
+                    </a>
+                    <a href="day2.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 2</div>
+                        <div class="sidebar-day-desc">天山大峡谷</div>
+                    </a>
+                    <a href="day3.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 3</div>
+                        <div class="sidebar-day-desc">赛里木湖</div>
+                    </a>
+                    <a href="day4.html" class="sidebar-day-link active">
+                        <div class="sidebar-day-number">DAY 4</div>
+                        <div class="sidebar-day-desc">独山子峡谷</div>
+                    </a>
+                    <a href="day5.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 5</div>
+                        <div class="sidebar-day-desc">吐鲁番</div>
+                    </a>
+                    <a href="day6.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 6</div>
+                        <div class="sidebar-day-desc">返程</div>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Page Sections -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-section-title">页面内容</h4>
+                <nav class="sidebar-nav">
+                    <a href="#timeline" class="sidebar-link">
+                        <span class="sidebar-icon">⏰</span>
+                        <span class="sidebar-text">时间安排</span>
+                    </a>
+                    <a href="#dining" class="sidebar-link">
+                        <span class="sidebar-icon">🍽️</span>
+                        <span class="sidebar-text">餐饮推荐</span>
+                    </a>
+                    <a href="#photography" class="sidebar-link">
+                        <span class="sidebar-icon">📸</span>
+                        <span class="sidebar-text">拍照攻略</span>
+                    </a>
+                    <a href="#highlights" class="sidebar-link">
+                        <span class="sidebar-icon">✨</span>
+                        <span class="sidebar-text">精彩亮点</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-wrapper" id="mainWrapper">
+        
+        <!-- Day Content -->
+        <section class="day-section">
+            <div class="container">
+                <!-- Day Card -->
+                <div class="day-card expanded" id="day4">
+                    <div class="day-header">
+                        <div class="day-number">DAY 4</div>
+                        <div class="day-date">周六</div>
+                        <div class="weather-info">
+                            <span class="weather-icon">☀️</span>
+                            <span>5-15°C</span>
+                        </div>
+                    </div>
+                    <div class="day-content">
+                        <div class="day-summary">
+                            <h3 class="day-title">赛里木湖深度摄影 → 返回乌鲁木齐 🏞️</h3>
+                            <div class="day-brief">日出摄影 → 环湖自驾 → 返程乌鲁木齐 → 晚餐休息</div>
+                        </div>
+                        
+                        <div class="day-details active" id="day4-details">
+                            <!-- 路线概览 -->
+                            <div class="route-overview">
+                                <div class="route-item">
+                                    <span class="route-icon">🌅</span>
+                                    <span>日出拍摄</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">🚗</span>
+                                    <span>环湖自驾</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">🌉</span>
+                                    <span>果子沟大桥</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">🏨</span>
+                                    <span>返回乌鲁木齐</span>
+                                </div>
+                            </div>
+                            
+                            <div class="route-info">
+                                <div class="route-detail">📍 <strong>环湖距离：</strong>90公里环湖公路</div>
+                                <div class="route-detail">⏱️ <strong>返程距离：</strong>600公里回乌鲁木齐</div>
+                                <div class="route-detail">🛣️ <strong>路况：</strong>环湖路+G30高速</div>
+                                <div class="route-detail">🌟 <strong>重点：</strong>深度摄影+安全返程</div>
+                            </div>
+
+                            <div class="timeline" id="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-time">05:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>日出前准备</strong>
+                                        <div class="sub-details">
+                                            <p>🌅 <strong>日出时间：</strong>6月约6:00开始，5:30出发找机位</p>
+                                            <p>📸 <strong>设备检查：</strong></p>
+                                            <ul>
+                                                <li>相机电池（低温耗电快，多备几块）</li>
+                                                <li>三脚架+遥控器（减少抖动）</li>
+                                                <li>手电筒（天黑找位置用）</li>
+                                                <li>保暖手套（方便操作相机）</li>
+                                            </ul>
+                                            <div class="important-note">
+                                                🥶 <strong>温度警告：</strong>日出时温度可能只有2-5°C，做好保暖措施
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">06:00-07:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>赛里木湖日出摄影黄金时段</strong>
+                                        <div class="sub-details">
+                                            <p>📸 <strong>最佳拍摄点位：</strong></p>
+                                            <ul>
+                                                <li><strong>东岸观景台</strong>（看日出最佳位置）
+                                                    <div class="gps-location">📍 GPS: 44.5692°N, 81.1456°E</div>
+                                                    <div class="photo-tip">📸 构图：前景用湖边石头，远山作背景</div>
+                                                </li>
+                                                <li><strong>松树头</strong>（有前景松树）
+                                                    <div class="gps-location">📍 GPS: 44.5845°N, 81.1234°E</div>
+                                                    <div class="photo-tip">📸 技巧：利用松树剪影，增强画面层次</div>
+                                                </li>
+                                            </ul>
+                                            <p>⏰ <strong>拍摄时间规划：</strong></p>
+                                            <ul>
+                                                <li>6:00-6:20：蓝调时刻，天空深蓝色</li>
+                                                <li>6:20-6:40：日出瞬间，金光洒湖面</li>
+                                                <li>6:40-7:30：晨光普照，色彩丰富</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">07:30-08:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>早餐+拍摄装备整理</strong>
+                                        <div class="sub-details">
+                                            <p>🍽️ <strong>早餐安排：</strong></p>
+                                            <ul>
+                                                <li>度假村早餐（如有）或自备干粮</li>
+                                                <li>热饮必备：咖啡/奶茶暖身</li>
+                                                <li>简单快速，为环湖节省时间</li>
+                                            </ul>
+                                            <p>📷 <strong>设备检查：</strong>清理镜头，检查存储卡空间</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">08:30-13:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>赛里木湖环湖深度摄影</strong>
+                                        <div class="sub-details">
+                                            <p>🗺️ <strong>环湖路线（顺时针90公里）：</strong></p>
+                                            <ol>
+                                                <li><strong>西海草原</strong>（08:30-09:30）
+                                                    <div class="gps-location">📍 GPS: 44.5956°N, 81.1089°E</div>
+                                                    <div class="photo-tip">📸 特色：野花盛开，牧民毡房，牛羊成群</div>
+                                                </li>
+                                                <li><strong>克勒涌珠</strong>（10:00-10:45）
+                                                    <div class="gps-location">📍 GPS: 44.6123°N, 81.0876°E</div>
+                                                    <div class="photo-tip">📸 特色：湖水最蓝的地方，蓝宝石般色彩</div>
+                                                </li>
+                                                <li><strong>北岸公路</strong>（11:00-11:30）
+                                                    <div class="photo-tip">📸 特色：公路大片，一边湖泊一边雪山</div>
+                                                </li>
+                                                <li><strong>湖心岛观景点</strong>（12:00-12:30）
+                                                    <div class="gps-location">📍 GPS: 44.5698°N, 81.1298°E</div>
+                                                    <div class="photo-tip">📸 特色：俯瞰湖心小岛，全景视角</div>
+                                                </li>
+                                            </ol>
+                                            <div class="photo-composition">
+                                                💡 <strong>拍摄建议：</strong>每个点停留30-45分钟，多角度拍摄，注意光线变化
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">13:00-14:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>午餐+返程准备</strong>
+                                        <div class="sub-details">
+                                            <p>🍽️ <strong>午餐选择：</strong></p>
+                                            <ul>
+                                                <li>湖边景区餐厅（价格较高，人均80-100元）</li>
+                                                <li>自备路餐（推荐，节省时间和费用）</li>
+                                            </ul>
+                                            <p>🎯 <strong>返程准备：</strong></p>
+                                            <ul>
+                                                <li>检查车况，确保轮胎、油量正常</li>
+                                                <li>规划返程路线，避开拥堵时段</li>
+                                                <li>整理行李，安全固定摄影器材</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">14:00-15:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>果子沟大桥最后拍摄</strong>
+                                        <div class="sub-details">
+                                            <p>📸 <strong>果子沟大桥拍摄攻略：</strong></p>
+                                            <ul>
+                                                <li><strong>观景台位置</strong>
+                                                    <div class="gps-location">📍 GPS: 44.4234°N, 81.0987°E</div>
+                                                    <div class="photo-tip">📸 角度：斜侧面拍摄桥梁全貌</div>
+                                                </li>
+                                                <li><strong>拍摄要点：</strong>
+                                                    <ul>
+                                                        <li>展现桥梁的工程美学</li>
+                                                        <li>包含山谷背景，体现规模</li>
+                                                        <li>可以航拍，效果更震撼</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <div class="important-note">
+                                                ⚠️ <strong>安全提醒：</strong>桥梁附近风大，注意人身和设备安全
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">15:00-20:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>长途返程乌鲁木齐</strong>
+                                        <div class="sub-details">
+                                            <p>🛣️ <strong>返程路线：</strong></p>
+                                            <ol>
+                                                <li>果子沟 → 上G30连霍高速</li>
+                                                <li>途经阿拉山口、精河、奎屯</li>
+                                                <li>沿G30行驶600公里</li>
+                                                <li>乌鲁木齐出口下高速回酒店</li>
+                                            </ol>
+                                            <p>🛑 <strong>推荐休息点：</strong></p>
+                                            <ul>
+                                                <li><strong>精河服务区</strong>（里程300km）- 休息、加油、用餐</li>
+                                                <li><strong>奎屯服务区</strong>（里程500km）- 最后休整点</li>
+                                            </ul>
+                                            <p>⏱️ <strong>预计到达：</strong>20:30抵达维也纳酒店</p>
+                                            <div class="important-note">
+                                                🚨 <strong>安全第一：</strong>长途驾驶注意休息，疲劳时及时停车休息
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">21:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>回到酒店，整理照片</strong>
+                                        <div class="sub-details">
+                                            <p>📷 <strong>照片备份：</strong>及时备份两天的拍摄成果</p>
+                                            <p>🛁 <strong>休息恢复：</strong>洗澡休息，为第5天做准备</p>
+                                            <p>🍽️ <strong>晚餐推荐：</strong>酒店附近简单用餐，不宜太晚</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 餐饮推荐 -->
+                            <div class="dining-section" id="dining">
+                                <h4 class="section-subtitle">🍽️ 今日餐饮推荐</h4>
+                                <div class="restaurant-grid">
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-name">赛里木湖度假村</div>
+                                        <div class="restaurant-info">早餐推荐 · 简餐</div>
+                                        <div class="restaurant-address">📍 湖西岸度假村</div>
+                                        <div class="restaurant-dishes">特色：快速简餐，适合早起</div>
+                                    </div>
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-name">精河服务区</div>
+                                        <div class="restaurant-info">途中用餐 · 人均40元</div>
+                                        <div class="restaurant-address">📍 G30高速精河服务区</div>
+                                        <div class="restaurant-dishes">特色：快餐、面食、新疆菜</div>
+                                    </div>
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-name">酒店周边餐厅</div>
+                                        <div class="restaurant-info">晚餐推荐 · 人均50元</div>
+                                        <div class="restaurant-address">📍 维也纳酒店附近</div>
+                                        <div class="restaurant-dishes">特色：清真菜、川菜可选</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 拍照攻略 -->
+                            <div class="photo-section" id="photography">
+                                <h4 class="section-subtitle">📸 专业拍照攻略</h4>
+                                <div class="photo-spots">
+                                    <div class="photo-spot">
+                                        <div class="spot-name">赛里木湖日出</div>
+                                        <div class="spot-time">最佳时间：06:00-07:30（蓝调+金光时刻）</div>
+                                        <div class="spot-equipment">推荐设备：广角镜头 + 三脚架 + ND镜</div>
+                                        <div class="spot-tip">💡 技巧：分级曝光，捕捉天空和湖面细节</div>
+                                    </div>
+                                    <div class="photo-spot">
+                                        <div class="spot-name">西海草原</div>
+                                        <div class="spot-time">最佳时间：09:00-10:00（晨光柔和）</div>
+                                        <div class="spot-equipment">推荐设备：长焦镜头 + 偏振镜</div>
+                                        <div class="spot-tip">💡 构图：利用野花前景，突出季节特色</div>
+                                    </div>
+                                    <div class="photo-spot">
+                                        <div class="spot-name">克勒涌珠湛蓝湖水</div>
+                                        <div class="spot-time">最佳时间：10:00-11:00（光线充足）</div>
+                                        <div class="spot-equipment">推荐设备：偏振镜 + 无人机</div>
+                                        <div class="spot-tip">💡 重点：捕捉湖水的蓝宝石色彩</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="highlights" id="highlights">
+                                <div class="highlight-item">🌅 震撼日出摄影体验</div>
+                                <div class="highlight-item">🌸 西海草原野花盛开</div>
+                                <div class="highlight-item">💎 克勒涌珠蓝宝石湖水</div>
+                                <div class="highlight-item">🌉 果子沟大桥工程奇迹</div>
+                                <div class="highlight-item">🚗 90公里环湖自驾挑战</div>
+                                <div class="highlight-item">🏠 安全返回乌鲁木齐</div>
+                            </div>
+
+                            <div class="day-tips">
+                                <div class="tips-grid">
+                                    <div class="tip-item">
+                                        <span class="tip-icon">🌅</span>
+                                        <span><strong>日出拍摄：</strong>5:30起床，做好保暖准备</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">🔋</span>
+                                        <span><strong>设备电量：</strong>低温耗电快，多备电池和充电宝</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">⏰</span>
+                                        <span><strong>时间把控：</strong>严格控制拍摄时间，确保安全返程</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">🛣️</span>
+                                        <span><strong>长途驾驶：</strong>途中多休息，疲劳时及时停车</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">📱</span>
+                                        <span><strong>应急联系：</strong>保持通讯畅通，及时报告位置</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">🧳</span>
+                                        <span><strong>行李整理：</strong>返程前检查物品，避免遗漏</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day Navigation -->
+                <div class="day-navigation">
+                    <a href="day3.html" class="nav-btn prev">
+                        <span class="nav-icon">←</span>
+                        <span class="nav-text">DAY 3 赛里木湖</span>
+                    </a>
+                    <a href="day5.html" class="nav-btn next">
+                        <span class="nav-text">DAY 5 吐鲁番</span>
+                        <span class="nav-icon">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>🌟 赛里木湖的日出永生难忘</h3>
+                <p>安全驾驶，享受旅程中的每一个瞬间</p>
+                <div class="footer-info">
+                    <span>📱 移动端优化</span>
+                    <span>🗺️ 详细攻略</span>
+                    <span>📸 摄影友好</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

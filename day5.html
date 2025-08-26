@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 5 - 吐鲁番一日游 | 新疆6日自驾游攻略</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">DAY 5 - 吐鲁番一日游</h1>
+            <p class="hero-subtitle">前往吐鲁番 · 火焰山 · 葡萄沟 · 坎儿井博物馆 · 返回</p>
+            <div class="hero-info">
+                <div class="info-item">
+                    <span class="info-icon">📅</span>
+                    <span>周日</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🏜️</span>
+                    <span>沙漠文化</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🍇</span>
+                    <span>葡萄之乡</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </header>
+
+
+    <!-- Sidebar Toggle Button -->
+    <button class="sidebar-toggle" id="sidebarToggle">
+        <span class="toggle-icon">☰</span>
+    </button>
+
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3 class="sidebar-title">DAY 5 导航</h3>
+            <button class="sidebar-close" id="sidebarClose">×</button>
+        </div>
+        
+        <div class="sidebar-content">
+            <!-- Day Navigation -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-section-title">其他天数</h4>
+                <nav class="sidebar-days">
+                    <a href="day1.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 1</div>
+                        <div class="sidebar-day-desc">抵达乌市</div>
+                    </a>
+                    <a href="day2.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 2</div>
+                        <div class="sidebar-day-desc">天山大峡谷</div>
+                    </a>
+                    <a href="day3.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 3</div>
+                        <div class="sidebar-day-desc">赛里木湖</div>
+                    </a>
+                    <a href="day4.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 4</div>
+                        <div class="sidebar-day-desc">独山子峡谷</div>
+                    </a>
+                    <a href="day5.html" class="sidebar-day-link active">
+                        <div class="sidebar-day-number">DAY 5</div>
+                        <div class="sidebar-day-desc">吐鲁番</div>
+                    </a>
+                    <a href="day6.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 6</div>
+                        <div class="sidebar-day-desc">返程</div>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Page Sections -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-section-title">页面内容</h4>
+                <nav class="sidebar-nav">
+                    <a href="#timeline" class="sidebar-link">
+                        <span class="sidebar-icon">⏰</span>
+                        <span class="sidebar-text">时间安排</span>
+                    </a>
+                    <a href="#attractions" class="sidebar-link">
+                        <span class="sidebar-icon">🎫</span>
+                        <span class="sidebar-text">景点信息</span>
+                    </a>
+                    <a href="#dining" class="sidebar-link">
+                        <span class="sidebar-icon">🍽️</span>
+                        <span class="sidebar-text">餐饮推荐</span>
+                    </a>
+                    <a href="#photography" class="sidebar-link">
+                        <span class="sidebar-icon">📸</span>
+                        <span class="sidebar-text">拍照攻略</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-wrapper" id="mainWrapper">
+        
+        <!-- Day Content -->
+        <section class="day-section">
+            <div class="container">
+                <!-- Day Card -->
+                <div class="day-card expanded" id="day5">
+                    <div class="day-header">
+                        <div class="day-number">DAY 5</div>
+                        <div class="day-date">周日</div>
+                        <div class="weather-info">
+                            <span class="weather-icon">☀️</span>
+                            <span>热情沙漠</span>
+                        </div>
+                    </div>
+                    <div class="day-content">
+                        <div class="day-summary">
+                            <h3 class="day-title">吐鲁番一日游 🏜️</h3>
+                            <div class="day-brief">前往吐鲁番 → 火焰山 → 葡萄沟 → 坎儿井博物馆 → 返回</div>
+                        </div>
+                        
+                        <div class="day-details active" id="day5-details">
+                            <div class="route-overview">
+                                <div class="route-item">
+                                    <span class="route-icon">🏨</span>
+                                    <span>乌鲁木齐</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">🔥</span>
+                                    <span>火焰山</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">🍇</span>
+                                    <span>葡萄沟</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">💧</span>
+                                    <span>坎儿井</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">🏨</span>
+                                    <span>返回</span>
+                                </div>
+                            </div>
+                            <div class="day-info">📍 来回400公里 · 🕐 全天行程 · 🌡️ 体验丝路文化</div>
+                            
+                            <div class="timeline" id="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-time">07:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>出发前往吐鲁番</strong>
+                                        <div class="sub-details">
+                                            <div class="route-details">
+                                                <div class="distance-info">📍 乌鲁木齐 → 吐鲁番：200公里，约2.5小时</div>
+                                                <div class="route-tip">🛣️ 走G30连霍高速，路况良好</div>
+                                                <div class="route-tip">⛽ <strong>加油建议：</strong>出发前在酒店附近加满油</div>
+                                                <div class="route-tip">🧴 <strong>防晒准备：</strong>吐鲁番紫外线强，备好防晒霜和墨镜</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-time">10:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>火焰山景区</strong>
+                                        <div class="sub-details">
+                                            <div class="attraction-info" id="attractions">
+                                                <div class="info-line">🎫 门票：40元/人</div>
+                                                <div class="info-line">⏱️ 游览时间：1.5小时</div>
+                                                <div class="info-line">📍 GPS：42.938889, 89.581111</div>
+                                                <div class="info-line">🅿️ 停车：景区门口免费停车场</div>
+                                                <div class="highlight">🌡️ 体验《西游记》取景地，感受"八百里火焰"</div>
+                                            </div>
+                                            
+                                            <h5 class="attraction-subtitle">🔥 火焰山特色体验</h5>
+                                            <ul class="experience-list">
+                                                <li><strong>巨型温度计</strong> - 显示地表温度，夏季可达70°C以上</li>
+                                                <li><strong>地宫探秘</strong> - 了解火焰山地质构造</li>
+                                                <li><strong>西游记文化</strong> - 孙悟空三借芭蕉扇的故事背景</li>
+                                                <li><strong>观景平台</strong> - 俯瞰连绵的红色山脉</li>
+                                            </ul>
+                                            
+                                            <div class="important-note">
+                                                🌡️ <strong>温馨提示：</strong>夏季气温极高，建议春秋季节游览。如夏季前往，请避开正午时分，做好防暑措施。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-time">12:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>午餐 + 葡萄沟</strong>
+                                        <div class="sub-details">
+                                            <div class="attraction-info">
+                                                <div class="info-line">🎫 葡萄沟门票：60元/人</div>
+                                                <div class="info-line">⏱️ 游览时间：2小时</div>
+                                                <div class="info-line">📍 GPS：42.951389, 89.584722</div>
+                                                <div class="info-line">🍇 最佳季节：8-9月葡萄成熟期</div>
+                                                <div class="highlight">🍇 参观维吾尔民居，品尝新鲜葡萄</div>
+                                            </div>
+                                            
+                                            <h5 class="attraction-subtitle">🍇 葡萄沟亮点</h5>
+                                            <ul class="experience-list">
+                                                <li><strong>葡萄架廊道</strong> - 绿荫如盖，夏日避暑好去处</li>
+                                                <li><strong>维族民居</strong> - 传统土坯房建筑，感受民族文化</li>
+                                                <li><strong>品尝葡萄</strong> - 多个品种任选，马奶子葡萄最著名</li>
+                                                <li><strong>葡萄干制作</strong> - 观看传统晾房工艺</li>
+                                                <li><strong>民族歌舞</strong> - 欣赏维吾尔族表演（部分时段）</li>
+                                            </ul>
+                                            
+                                            <div class="shopping-tips">
+                                                🛍️ <strong>购物建议：</strong>
+                                                <ul>
+                                                    <li>葡萄干 - 15-30元/500g，绿色、红色品种可选</li>
+                                                    <li>新疆大枣 - 20-40元/500g</li>
+                                                    <li>巴旦木 - 40-60元/500g</li>
+                                                    <li>建议货比三家，可适当砍价</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-time">15:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>坎儿井博物馆</strong>
+                                        <div class="sub-details">
+                                            <div class="attraction-info">
+                                                <div class="info-line">🎫 门票：20元/人</div>
+                                                <div class="info-line">⏱️ 游览时间：1小时</div>
+                                                <div class="info-line">📍 GPS：42.947222, 89.569444</div>
+                                                <div class="highlight">💧 了解古代水利工程，感受先民智慧</div>
+                                            </div>
+                                            
+                                            <h5 class="attraction-subtitle">💧 坎儿井知识</h5>
+                                            <ul class="experience-list">
+                                                <li><strong>工程奇迹</strong> - 与长城、京杭大运河并称中国古代三大工程</li>
+                                                <li><strong>地下参观</strong> - 深入地下水渠，体验古代工程</li>
+                                                <li><strong>历史文化</strong> - 了解2000多年的灌溉历史</li>
+                                                <li><strong>现代意义</strong> - 至今仍在使用的水利系统</li>
+                                            </ul>
+                                            
+                                            <div class="cultural-note">
+                                                📚 <strong>文化价值：</strong>坎儿井体现了新疆人民与自然和谐相处的智慧，是古丝绸之路文明的重要见证。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-time">16:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>返程乌鲁木齐</strong>
+                                        <div class="sub-details">
+                                            <div class="route-details">
+                                                <div class="distance-info">📍 吐鲁番 → 乌鲁木齐：200公里，约2.5小时</div>
+                                                <div class="route-tip">🛣️ 建议在达坂城服务区休息</div>
+                                                <div class="route-tip">⛽ 达坂城加油站：N43.3547°, E88.3089°</div>
+                                                <div class="route-tip">🌅 <strong>夕阳美景：</strong>返程路上可欣赏天山余脉夕阳</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-time">19:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>抵达酒店，结束一天行程</strong>
+                                        <div class="sub-details">
+                                            <div class="day-tips">
+                                                💡 <strong>贴心提示：</strong>吐鲁番气候干燥，多备饮用水。整理行李，为明天的返程做准备。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 餐饮推荐 -->
+                            <div class="dining-section" id="dining">
+                                <h4 class="section-subtitle">🍽️ 今日餐饮推荐</h4>
+                                <div class="restaurant-grid">
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-name">葡萄沟农家乐</div>
+                                        <div class="restaurant-info">午餐推荐 · 人均60-80元</div>
+                                        <div class="restaurant-address">📍 吐鲁番市高昌区葡萄沟景区内</div>
+                                        <div class="restaurant-dishes">🍇 新疆手抓饭、烤肉、新鲜葡萄、酸奶</div>
+                                        <div class="restaurant-features">特色：葡萄架下用餐，清凉避暑</div>
+                                    </div>
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-name">吐鲁番老城美食街</div>
+                                        <div class="restaurant-info">下午茶 · 人均30-40元</div>
+                                        <div class="restaurant-address">📍 吐鲁番市中心老城区</div>
+                                        <div class="restaurant-dishes">🥟 烤包子、馕、奶茶、酸奶疙瘩</div>
+                                        <div class="restaurant-features">特色：本地人聚集地，价格实惠</div>
+                                    </div>
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-name">达坂城服务区</div>
+                                        <div class="restaurant-info">返程用餐 · 人均35元</div>
+                                        <div class="restaurant-address">📍 G30高速达坂城服务区</div>
+                                        <div class="restaurant-dishes">🍜 兰州拉面、盖浇饭、简餐</div>
+                                        <div class="restaurant-features">特色：长途休息补给站</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 拍照攻略 -->
+                            <div class="photo-section" id="photography">
+                                <h4 class="section-subtitle">📸 拍照攻略</h4>
+                                <div class="photo-spots">
+                                    <div class="photo-spot">
+                                        <div class="spot-name">火焰山全景</div>
+                                        <div class="spot-time">最佳时间：10:00-11:00（避开正午烈日）</div>
+                                        <div class="spot-equipment">推荐设备：广角镜头24-70mm</div>
+                                        <div class="spot-tip">💡 站在观景台，拍摄连绵火红山体。注意防晒，相机避免长时间暴晒</div>
+                                    </div>
+                                    <div class="photo-spot">
+                                        <div class="spot-name">温度计合影</div>
+                                        <div class="spot-time">全天可拍</div>
+                                        <div class="spot-equipment">推荐设备：标准镜头50mm</div>
+                                        <div class="spot-tip">💡 与巨型温度计合影，记录沙漠高温。可请游客帮忙拍摄全身照</div>
+                                    </div>
+                                    <div class="photo-spot">
+                                        <div class="spot-name">葡萄架下光影</div>
+                                        <div class="spot-time">最佳时间：14:00-15:00（午后光影）</div>
+                                        <div class="spot-equipment">推荐设备：85mm人像镜头</div>
+                                        <div class="spot-tip">💡 利用葡萄叶片的斑驳光影，营造绿洲感。可拍摄人像或静物</div>
+                                    </div>
+                                    <div class="photo-spot">
+                                        <div class="spot-name">维族民居</div>
+                                        <div class="spot-time">全天可拍</div>
+                                        <div class="spot-equipment">推荐设备：超广角14-24mm</div>
+                                        <div class="spot-tip">💡 拍摄传统土坯房建筑，展现民族特色。注意尊重当地居民隐私</div>
+                                    </div>
+                                    <div class="photo-spot">
+                                        <div class="spot-name">地下水渠</div>
+                                        <div class="spot-time">全天可拍</div>
+                                        <div class="spot-equipment">推荐设备：广角镜头+闪光灯</div>
+                                        <div class="spot-tip">💡 利用地下通道的光线，拍摄历史沧桑感。注意安全，听从导游指导</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 实用贴士 -->
+                            <div class="practical-tips">
+                                <h4 class="section-subtitle">💡 实用贴士</h4>
+                                <div class="tips-grid">
+                                    <div class="tip-item climate">
+                                        <span class="tip-icon">🌡️</span>
+                                        <div class="tip-content">
+                                            <strong>气候特点：</strong>
+                                            <p>吐鲁番夏季极热（可达50°C），冬季严寒，春秋季节气候宜人。建议春秋季前往，夏季需做好防暑措施。</p>
+                                        </div>
+                                    </div>
+                                    <div class="tip-item water">
+                                        <span class="tip-icon">💧</span>
+                                        <div class="tip-content">
+                                            <strong>补水重要：</strong>
+                                            <p>气候干燥，需大量补水。建议携带充足饮用水，避免脱水。葡萄沟内有天然甘甜的井水。</p>
+                                        </div>
+                                    </div>
+                                    <div class="tip-item sunscreen">
+                                        <span class="tip-icon">🧴</span>
+                                        <div class="tip-content">
+                                            <strong>防晒必备：</strong>
+                                            <p>紫外线强烈，防晒霜、太阳镜、帽子必不可少。建议使用SPF50+的防晒产品。</p>
+                                        </div>
+                                    </div>
+                                    <div class="tip-item shopping">
+                                        <span class="tip-icon">🛍️</span>
+                                        <div class="tip-content">
+                                            <strong>购物提醒：</strong>
+                                            <p>葡萄干、大枣等干果质量差异较大，建议品尝后购买。价格可适当协商，但要尊重商贩。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="day-tips">
+                                🌡️ <strong>注意：</strong>吐鲁番夏季极热，建议春秋季前往。如夏季游览，请做好充分的防暑降温准备，随时补充水分。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day Navigation -->
+                <div class="day-navigation">
+                    <a href="day4.html" class="nav-btn prev">
+                        <span class="nav-icon">←</span>
+                        <span class="nav-text">DAY 4 赛里木湖深度摄影</span>
+                    </a>
+                    <a href="day6.html" class="nav-btn next">
+                        <span class="nav-text">DAY 6 返程日</span>
+                        <span class="nav-icon">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>🌟 吐鲁番的热情如火，文化如酒</h3>
+                <p>安全驾驶，享受旅程中的每一个瞬间</p>
+                <div class="footer-info">
+                    <span>📱 移动端优化</span>
+                    <span>🗺️ 详细攻略</span>
+                    <span>📸 摄影友好</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

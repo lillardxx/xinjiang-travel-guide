@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 3 - 独山子大峡谷 → 赛里木湖 | 新疆6日自驾游攻略</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">DAY 3 - 独山子大峡谷 → 赛里木湖</h1>
+            <p class="hero-subtitle">出发独山子 · 大峡谷震撼景观 · 赛里木湖日落</p>
+            <div class="hero-info">
+                <div class="info-item">
+                    <span class="info-icon">📅</span>
+                    <span>周五</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🌤️</span>
+                    <span>8-18°C</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🏔️</span>
+                    <span>长途自驾</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </header>
+
+
+    <!-- Sidebar Toggle Button -->
+    <button class="sidebar-toggle" id="sidebarToggle">
+        <span class="toggle-icon">☰</span>
+    </button>
+
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3 class="sidebar-title">DAY 3 导航</h3>
+            <button class="sidebar-close" id="sidebarClose">×</button>
+        </div>
+        
+        <div class="sidebar-content">
+            <!-- Day Navigation -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-section-title">其他天数</h4>
+                <nav class="sidebar-days">
+                    <a href="day1.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 1</div>
+                        <div class="sidebar-day-desc">抵达乌市</div>
+                    </a>
+                    <a href="day2.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 2</div>
+                        <div class="sidebar-day-desc">天山大峡谷</div>
+                    </a>
+                    <a href="day3.html" class="sidebar-day-link active">
+                        <div class="sidebar-day-number">DAY 3</div>
+                        <div class="sidebar-day-desc">赛里木湖</div>
+                    </a>
+                    <a href="day4.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 4</div>
+                        <div class="sidebar-day-desc">独山子峡谷</div>
+                    </a>
+                    <a href="day5.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 5</div>
+                        <div class="sidebar-day-desc">吐鲁番</div>
+                    </a>
+                    <a href="day6.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 6</div>
+                        <div class="sidebar-day-desc">返程</div>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Page Sections -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-section-title">页面内容</h4>
+                <nav class="sidebar-nav">
+                    <a href="#timeline" class="sidebar-link">
+                        <span class="sidebar-icon">⏰</span>
+                        <span class="sidebar-text">时间安排</span>
+                    </a>
+                    <a href="#dining" class="sidebar-link">
+                        <span class="sidebar-icon">🍽️</span>
+                        <span class="sidebar-text">餐饮推荐</span>
+                    </a>
+                    <a href="#photography" class="sidebar-link">
+                        <span class="sidebar-icon">📸</span>
+                        <span class="sidebar-text">拍照攻略</span>
+                    </a>
+                    <a href="#highlights" class="sidebar-link">
+                        <span class="sidebar-icon">✨</span>
+                        <span class="sidebar-text">精彩亮点</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-wrapper" id="mainWrapper">
+        
+        <!-- Day Content -->
+        <section class="day-section">
+            <div class="container">
+                <!-- Day Card -->
+                <div class="day-card expanded" id="day3">
+                    <div class="day-header">
+                        <div class="day-number">DAY 3</div>
+                        <div class="day-date">周五</div>
+                        <div class="weather-info">
+                            <span class="weather-icon">🌤️</span>
+                            <span>8-18°C</span>
+                        </div>
+                    </div>
+                    <div class="day-content">
+                        <div class="day-summary">
+                            <h3 class="day-title">独山子大峡谷 → 赛里木湖 🌊</h3>
+                            <div class="day-brief">出发独山子 → 大峡谷震撼景观 → 赛里木湖日落</div>
+                        </div>
+                        
+                        <div class="day-details active" id="day3-details">
+                            <!-- 路线概览 -->
+                            <div class="route-overview">
+                                <div class="route-item">
+                                    <span class="route-icon">🏨</span>
+                                    <span>维也纳酒店</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">🏔️</span>
+                                    <span>独山子大峡谷</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">🍽️</span>
+                                    <span>奎屯午餐</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">🌊</span>
+                                    <span>赛里木湖</span>
+                                </div>
+                            </div>
+                            
+                            <div class="route-info">
+                                <div class="route-detail">📍 <strong>总距离：</strong>往返580公里</div>
+                                <div class="route-detail">⏱️ <strong>纯车程：</strong>6.5小时</div>
+                                <div class="route-detail">🛣️ <strong>路线：</strong>G30连霍高速→S101→G30→赛里木湖</div>
+                                <div class="route-detail">⚠️ <strong>提醒：</strong>今日行程紧张，需要早起出发</div>
+                            </div>
+
+                            <div class="timeline" id="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-time">06:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>早餐+出发准备</strong>
+                                        <div class="sub-details">
+                                            <p>🥐 <strong>早餐建议：</strong>酒店早餐（6:30开始供应）</p>
+                                            <p>🎒 <strong>长途必备物品：</strong></p>
+                                            <ul>
+                                                <li>相机设备+充电宝（全天拍摄需要）</li>
+                                                <li>保温衣物（赛里木湖海拔高，温度低）</li>
+                                                <li>墨镜+防晒霜（高原紫外线强）</li>
+                                                <li>充足食物+水（沿途餐厅较少）</li>
+                                                <li>常用药品（晕车药、感冒药）</li>
+                                            </ul>
+                                            <div class="important-note">
+                                                ⛽ <strong>加油重要：</strong>务必在酒店附近加满油，全程约消耗60-70升
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">07:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>出发前往独山子大峡谷</strong>
+                                        <div class="sub-details">
+                                            <p>🗺️ <strong>详细自驾路线：</strong></p>
+                                            <ol>
+                                                <li>维也纳酒店 → 北京南路 → 上G30连霍高速</li>
+                                                <li>G30高速行驶210公里（约2.5小时）</li>
+                                                <li>独山子出口下高速 → S101省道</li>
+                                                <li>沿S101行驶8公里到达独山子大峡谷</li>
+                                            </ol>
+                                            <p>🎯 <strong>导航目的地：</strong>"独山子大峡谷景区"</p>
+                                            <p>⏱️ <strong>预计到达：</strong>09:30</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">09:30-11:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>独山子大峡谷震撼体验</strong>
+                                        <div class="sub-details">
+                                            <p>🎫 <strong>门票信息：</strong></p>
+                                            <ul>
+                                                <li>门票免费（2023年起免费开放）</li>
+                                                <li>停车费：10元/车</li>
+                                                <li>🅿️ 停车场直接位于观景台附近</li>
+                                            </ul>
+                                            <p>📸 <strong>拍摄攻略：</strong></p>
+                                            <ul>
+                                                <li><strong>主观景台</strong>（必拍点）
+                                                    <div class="gps-location">📍 GPS: 44.3254°N, 84.8721°E</div>
+                                                    <div class="photo-tip">📸 最佳时间：10:00-11:00阳光侧射，层次分明</div>
+                                                </li>
+                                                <li><strong>峡谷全景</strong>
+                                                    <div class="photo-tip">📷 设备：广角镜头14-24mm，捕捉峡谷气势</div>
+                                                </li>
+                                                <li><strong>航拍建议</strong>
+                                                    <div class="photo-tip">🚁 起飞点：停车场空旷处，注意风力影响</div>
+                                                </li>
+                                            </ul>
+                                            <div class="important-note">
+                                                ⚠️ <strong>安全提醒：</strong>峡谷边缘无护栏，拍照时注意安全，切勿靠近边缘
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">11:30-12:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>前往奎屯市区午餐</strong>
+                                        <div class="sub-details">
+                                            <p>🚗 <strong>路线：</strong>S101 → G30高速奎屯出口（25公里，30分钟）</p>
+                                            <p>🍽️ <strong>推荐餐厅：</strong></p>
+                                            <ul>
+                                                <li><strong>奎屯大盘鸡王</strong> - 乌苏街128号</li>
+                                                <li>招牌：大盘鸡、拌面、烤肉</li>
+                                                <li>人均：45-60元，停车方便</li>
+                                            </ul>
+                                            <p>⛽ <strong>加油建议：</strong>奎屯市区加油站较多，可适当补充</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">12:30-16:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>长途跋涉前往赛里木湖</strong>
+                                        <div class="sub-details">
+                                            <p>🗺️ <strong>详细路线：</strong></p>
+                                            <ol>
+                                                <li>奎屯上G30连霍高速向西</li>
+                                                <li>经过精河县、阿拉山口方向</li>
+                                                <li>行驶350公里（约4小时）</li>
+                                                <li>赛里木湖出口下高速</li>
+                                            </ol>
+                                            <p>🛑 <strong>沿途重要节点：</strong></p>
+                                            <ul>
+                                                <li><strong>精河服务区</strong>（里程200km）- 休息、加油、如厕</li>
+                                                <li><strong>阿拉山口</strong>（里程280km）- 最后补给点</li>
+                                                <li><strong>果子沟大桥</strong>（里程330km）- 必拍景点</li>
+                                            </ul>
+                                            <div class="important-note">
+                                                🌡️ <strong>温度提醒：</strong>随着海拔升高，温度逐渐下降，及时增添衣物
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">16:30-17:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>抵达赛里木湖+入住安排</strong>
+                                        <div class="sub-details">
+                                            <p>🏠 <strong>住宿推荐：</strong></p>
+                                            <ul>
+                                                <li><strong>赛里木湖度假村</strong> - ☎️ 0909-2727888
+                                                    <ul>
+                                                        <li>位置：湖西岸，看日落最佳位置</li>
+                                                        <li>价格：380-580元/晚</li>
+                                                        <li>特色：湖景房，有暖气</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>哈萨克毡房</strong> - 现场预订
+                                                    <ul>
+                                                        <li>价格：200-300元/晚</li>
+                                                        <li>特色：民族风情，但条件相对简陋</li>
+                                                        <li>建议：体验一晚即可</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <div class="important-note">
+                                                🏔️ <strong>高原提醒：</strong>赛里木湖海拔2073米，部分人可能有轻微高反，注意休息
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">17:30-20:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>赛里木湖日落黄金时刻</strong>
+                                        <div class="sub-details">
+                                            <p>📸 <strong>日落拍摄攻略：</strong></p>
+                                            <ul>
+                                                <li><strong>西海草原观景点</strong>
+                                                    <div class="gps-location">📍 GPS: 44.5956°N, 81.1089°E</div>
+                                                    <div class="photo-tip">📸 最佳时间：19:30-20:30（6月日落时间）</div>
+                                                </li>
+                                                <li><strong>拍摄设备建议：</strong>
+                                                    <ul>
+                                                        <li>三脚架（必备，湖边风大）</li>
+                                                        <li>偏振镜（消除水面反光）</li>
+                                                        <li>渐变镜（平衡天空和湖面曝光）</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>构图建议：</strong>前景用野花或石头，中景是湖面，远景是雪山</li>
+                                            </ul>
+                                            <div class="photo-composition">
+                                                💡 <strong>专业提示：</strong>日落时分温度骤降，注意相机保暖，电池消耗较快
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">20:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>晚餐+早休息</strong>
+                                        <div class="sub-details">
+                                            <p>🍽️ <strong>晚餐选择：</strong></p>
+                                            <ul>
+                                                <li>度假村餐厅：新疆菜为主，人均60-80元</li>
+                                                <li>毡房餐饮：手抓肉、奶茶，体验民族风味</li>
+                                                <li>自备干粮：建议准备一些，湖边选择有限</li>
+                                            </ul>
+                                            <p>💤 <strong>休息建议：</strong>明天需要早起看日出，建议21:30前休息</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 餐饮推荐 -->
+                            <div class="dining-section" id="dining">
+                                <h4 class="section-subtitle">🍽️ 今日餐饮推荐</h4>
+                                <div class="restaurant-grid">
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-name">维也纳酒店早餐</div>
+                                        <div class="restaurant-info">早餐推荐 · 自助餐</div>
+                                        <div class="restaurant-address">📍 酒店1楼餐厅（6:30开始）</div>
+                                        <div class="restaurant-dishes">特色：中西结合，营养丰富</div>
+                                    </div>
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-name">奎屯大盘鸡王</div>
+                                        <div class="restaurant-info">午餐推荐 · 人均55元</div>
+                                        <div class="restaurant-address">📍 奎屯市乌苏街128号</div>
+                                        <div class="restaurant-dishes">招牌：大盘鸡、拌面、烤羊肉</div>
+                                    </div>
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-name">赛里木湖度假村</div>
+                                        <div class="restaurant-info">晚餐推荐 · 人均70元</div>
+                                        <div class="restaurant-address">📍 赛里木湖西岸</div>
+                                        <div class="restaurant-dishes">特色：湖鱼、牛羊肉、奶制品</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 拍照攻略 -->
+                            <div class="photo-section" id="photography">
+                                <h4 class="section-subtitle">📸 专业拍照攻略</h4>
+                                <div class="photo-spots">
+                                    <div class="photo-spot">
+                                        <div class="spot-name">独山子大峡谷主观景台</div>
+                                        <div class="spot-time">最佳时间：10:00-11:00（上午侧光）</div>
+                                        <div class="spot-equipment">推荐设备：超广角14-24mm + 无人机</div>
+                                        <div class="spot-tip">💡 构图：利用峡谷的S形曲线，强调纵深感</div>
+                                    </div>
+                                    <div class="photo-spot">
+                                        <div class="spot-name">果子沟大桥</div>
+                                        <div class="spot-time">最佳时间：路过时停车拍摄</div>
+                                        <div class="spot-equipment">推荐设备：长焦镜头70-200mm</div>
+                                        <div class="spot-tip">💡 角度：从侧面拍摄桥的全貌和山谷</div>
+                                    </div>
+                                    <div class="photo-spot">
+                                        <div class="spot-name">赛里木湖日落</div>
+                                        <div class="spot-time">最佳时间：19:30-20:30（黄金时刻）</div>
+                                        <div class="spot-equipment">推荐设备：三脚架 + 偏振镜 + 渐变镜</div>
+                                        <div class="spot-tip">💡 技巧：利用前景野花，营造层次感</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="highlights" id="highlights">
+                                <div class="highlight-item">🏔️ 独山子大峡谷震撼地貌</div>
+                                <div class="highlight-item">🌉 果子沟大桥工程奇迹</div>
+                                <div class="highlight-item">🌅 赛里木湖绝美日落</div>
+                                <div class="highlight-item">🏕️ 湖边住宿特色体验</div>
+                                <div class="highlight-item">🚗 580公里长途自驾挑战</div>
+                            </div>
+
+                            <div class="day-tips">
+                                <div class="tips-grid">
+                                    <div class="tip-item">
+                                        <span class="tip-icon">⏰</span>
+                                        <span><strong>时间安排：</strong>今日行程紧张，严格按时间执行</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">⛽</span>
+                                        <span><strong>加油重要：</strong>出发前务必加满油，沿途加油站不多</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">🧥</span>
+                                        <span><strong>保暖衣物：</strong>赛里木湖海拔高，温差大，多带衣服</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">📱</span>
+                                        <span><strong>充电设备：</strong>备好充电宝，高海拔耗电快</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">🏔️</span>
+                                        <span><strong>高反预防：</strong>适量饮水，避免剧烈运动</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">📷</span>
+                                        <span><strong>摄影装备：</strong>三脚架必带，湖边风大需要稳定</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day Navigation -->
+                <div class="day-navigation">
+                    <a href="day2.html" class="nav-btn prev">
+                        <span class="nav-icon">←</span>
+                        <span class="nav-text">DAY 2 天山大峡谷</span>
+                    </a>
+                    <a href="day4.html" class="nav-btn next">
+                        <span class="nav-text">DAY 4 赛里木湖深度摄影</span>
+                        <span class="nav-icon">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>🌟 赛里木湖的美景令人心醉</h3>
+                <p>安全驾驶，享受旅程中的每一个瞬间</p>
+                <div class="footer-info">
+                    <span>📱 移动端优化</span>
+                    <span>🗺️ 详细攻略</span>
+                    <span>📸 摄影友好</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

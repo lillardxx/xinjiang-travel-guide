@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 6 - 返程日 | 新疆6日自驾游攻略</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">DAY 6 - 返程日</h1>
+            <p class="hero-subtitle">酒店退房 · 还车整理 · 购买特产 · 机场返程</p>
+            <div class="hero-info">
+                <div class="info-item">
+                    <span class="info-icon">📅</span>
+                    <span>周一</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">✈️</span>
+                    <span>返程日</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🎁</span>
+                    <span>购买特产</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </header>
+
+
+    <!-- Sidebar Toggle Button -->
+    <button class="sidebar-toggle" id="sidebarToggle">
+        <span class="toggle-icon">☰</span>
+    </button>
+
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3 class="sidebar-title">DAY 6 导航</h3>
+            <button class="sidebar-close" id="sidebarClose">×</button>
+        </div>
+        
+        <div class="sidebar-content">
+            <!-- Day Navigation -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-section-title">其他天数</h4>
+                <nav class="sidebar-days">
+                    <a href="day1.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 1</div>
+                        <div class="sidebar-day-desc">抵达乌市</div>
+                    </a>
+                    <a href="day2.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 2</div>
+                        <div class="sidebar-day-desc">天山大峡谷</div>
+                    </a>
+                    <a href="day3.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 3</div>
+                        <div class="sidebar-day-desc">赛里木湖</div>
+                    </a>
+                    <a href="day4.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 4</div>
+                        <div class="sidebar-day-desc">独山子峡谷</div>
+                    </a>
+                    <a href="day5.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 5</div>
+                        <div class="sidebar-day-desc">吐鲁番</div>
+                    </a>
+                    <a href="day6.html" class="sidebar-day-link active">
+                        <div class="sidebar-day-number">DAY 6</div>
+                        <div class="sidebar-day-desc">返程</div>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Page Sections -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-section-title">页面内容</h4>
+                <nav class="sidebar-nav">
+                    <a href="#timeline" class="sidebar-link">
+                        <span class="sidebar-icon">⏰</span>
+                        <span class="sidebar-text">时间安排</span>
+                    </a>
+                    <a href="#shopping" class="sidebar-link">
+                        <span class="sidebar-icon">🛍️</span>
+                        <span class="sidebar-text">特产购买</span>
+                    </a>
+                    <a href="#checklist" class="sidebar-link">
+                        <span class="sidebar-icon">📋</span>
+                        <span class="sidebar-text">返程清单</span>
+                    </a>
+                    <a href="#summary" class="sidebar-link">
+                        <span class="sidebar-icon">💭</span>
+                        <span class="sidebar-text">旅程总结</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-wrapper" id="mainWrapper">
+        
+        <!-- Day Content -->
+        <section class="day-section">
+            <div class="container">
+                <!-- Day Card -->
+                <div class="day-card expanded" id="day6">
+                    <div class="day-header">
+                        <div class="day-number">DAY 6</div>
+                        <div class="day-date">周一</div>
+                        <div class="weather-info">
+                            <span class="weather-icon">✈️</span>
+                            <span>返程</span>
+                        </div>
+                    </div>
+                    <div class="day-content">
+                        <div class="day-summary">
+                            <h3 class="day-title">返程日 ✈️</h3>
+                            <div class="day-brief">酒店退房 → 还车整理 → 购买特产 → 机场返程</div>
+                        </div>
+                        
+                        <div class="day-details active" id="day6-details">
+                            <div class="timeline" id="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-time">上午 8:00-10:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>酒店退房，整理行李</strong>
+                                        <div class="sub-details">
+                                            <h5 class="sub-title">🏨 退房流程</h5>
+                                            <ul class="checkout-list">
+                                                <li><strong>检查房间：</strong>确保没有遗留物品，检查洗手间、衣柜、床头柜</li>
+                                                <li><strong>押金退还：</strong>确认房间无损坏，办理押金退还手续</li>
+                                                <li><strong>发票索取：</strong>如需报销，记得索取住宿发票</li>
+                                                <li><strong>行李寄存：</strong>如航班较晚，可考虑在酒店寄存行李</li>
+                                            </ul>
+                                            
+                                            <h5 class="sub-title">🧳 行李整理贴士</h5>
+                                            <ul class="packing-tips">
+                                                <li><strong>照片备份：</strong>确保所有照片已备份到云端或多个设备</li>
+                                                <li><strong>纪念品保护：</strong>易碎物品用衣物包裹，放在行李箱中间</li>
+                                                <li><strong>充电设备：</strong>充电宝、充电线等放在随身背包</li>
+                                                <li><strong>证件检查：</strong>确认身份证、机票、钱包等重要物品</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-time">上午 10:00-11:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>还车手续办理</strong>
+                                        <div class="sub-details">
+                                            <h5 class="sub-title">🚗 还车流程</h5>
+                                            <div class="return-car-process">
+                                                <div class="step">
+                                                    <div class="step-number">1</div>
+                                                    <div class="step-content">
+                                                        <strong>车辆检查</strong>
+                                                        <p>与工作人员一同检查车辆外观、内饰，确认无新增损伤</p>
+                                                    </div>
+                                                </div>
+                                                <div class="step">
+                                                    <div class="step-number">2</div>
+                                                    <div class="step-content">
+                                                        <strong>油量确认</strong>
+                                                        <p>按合同要求，通常需满油还车。就近加油站位置：北京南路中石油</p>
+                                                    </div>
+                                                </div>
+                                                <div class="step">
+                                                    <div class="step-number">3</div>
+                                                    <div class="step-content">
+                                                        <strong>费用结算</strong>
+                                                        <p>确认无违章、无额外费用，办理押金解冻手续</p>
+                                                    </div>
+                                                </div>
+                                                <div class="step">
+                                                    <div class="step-number">4</div>
+                                                    <div class="step-content">
+                                                        <strong>取票据</strong>
+                                                        <p>索取还车凭证，确认租车费用发票（如需报销）</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="important-note">
+                                                ⚠️ <strong>重要提醒：</strong>还车前务必清理车内个人物品，特别注意手机支架、充电线等小物件。建议提前1小时到达还车地点。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-time">中午 12:00-14:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>最后的特产采购</strong>
+                                        <div class="sub-details" id="shopping">
+                                            <h5 class="sub-title">🛍️ 推荐购买地点</h5>
+                                            <div class="shopping-locations">
+                                                <div class="location-card">
+                                                    <div class="location-name">🏬 国际大巴扎</div>
+                                                    <div class="location-address">📍 天山区解放南路8号</div>
+                                                    <div class="location-features">
+                                                        <span class="feature-tag">品种齐全</span>
+                                                        <span class="feature-tag">价格适中</span>
+                                                        <span class="feature-tag">可砍价</span>
+                                                    </div>
+                                                    <div class="location-tip">💡 一楼主要是干果，二楼有工艺品，三楼是餐饮</div>
+                                                </div>
+                                                
+                                                <div class="location-card">
+                                                    <div class="location-name">🏪 友好超市</div>
+                                                    <div class="location-address">📍 友好南路与南湖东路交汇处</div>
+                                                    <div class="location-features">
+                                                        <span class="feature-tag">明码标价</span>
+                                                        <span class="feature-tag">品质保证</span>
+                                                        <span class="feature-tag">包装精美</span>
+                                                    </div>
+                                                    <div class="location-tip">💡 适合购买包装好的礼品装，省去讨价还价的麻烦</div>
+                                                </div>
+                                                
+                                                <div class="location-card">
+                                                    <div class="location-name">✈️ 机场免税店</div>
+                                                    <div class="location-address">📍 天山国际机场候机楼</div>
+                                                    <div class="location-features">
+                                                        <span class="feature-tag">免税价格</span>
+                                                        <span class="feature-tag">方便快捷</span>
+                                                        <span class="feature-tag">品质可靠</span>
+                                                    </div>
+                                                    <div class="location-tip">💡 时间紧张的最后选择，但品种相对有限</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <h5 class="sub-title">🎁 新疆特产推荐清单</h5>
+                                            <div class="specialty-grid">
+                                                <div class="specialty-category">
+                                                    <h6 class="category-title">🍇 干果类</h6>
+                                                    <ul class="specialty-list">
+                                                        <li><strong>葡萄干</strong> - 吐鲁番马奶子，绿香妃 <span class="price">15-30元/500g</span></li>
+                                                        <li><strong>大枣</strong> - 和田大枣，若羌大枣 <span class="price">20-40元/500g</span></li>
+                                                        <li><strong>巴旦木</strong> - 新疆原产，营养丰富 <span class="price">40-80元/500g</span></li>
+                                                        <li><strong>核桃</strong> - 阿克苏薄皮核桃 <span class="price">30-60元/500g</span></li>
+                                                        <li><strong>无花果</strong> - 阿图什无花果干 <span class="price">25-45元/500g</span></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="specialty-category">
+                                                    <h6 class="category-title">🏺 工艺品类</h6>
+                                                    <ul class="specialty-list">
+                                                        <li><strong>和田玉</strong> - 需要专业知识，建议谨慎购买 <span class="price">几百-几万</span></li>
+                                                        <li><strong>维族工艺品</strong> - 木雕、铜器、地毯 <span class="price">50-500元</span></li>
+                                                        <li><strong>英吉沙小刀</strong> - 民族特色工艺刀具 <span class="price">30-200元</span></li>
+                                                        <li><strong>艾德莱斯丝绸</strong> - 传统丝绸织品 <span class="price">100-800元</span></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="specialty-category">
+                                                    <h6 class="category-title">🍯 食品类</h6>
+                                                    <ul class="specialty-list">
+                                                        <li><strong>天山雪蜜</strong> - 纯天然蜂蜜 <span class="price">50-120元/500g</span></li>
+                                                        <li><strong>新疆酸奶疙瘩</strong> - 特色奶制品 <span class="price">15-25元/袋</span></li>
+                                                        <li><strong>哈密瓜干</strong> - 天然晾晒 <span class="price">20-35元/500g</span></li>
+                                                        <li><strong>新疆奶茶粉</strong> - 正宗口味 <span class="price">25-40元/盒</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="shopping-tips">
+                                                <h6 class="tips-title">💡 购物小贴士</h6>
+                                                <ul class="tips-list">
+                                                    <li><strong>砍价技巧：</strong>一般可以砍到标价的6-8折，态度友好但坚持底线</li>
+                                                    <li><strong>质量辨别：</strong>干果颜色自然、无异味、颗粒饱满为佳</li>
+                                                    <li><strong>包装选择：</strong>送人建议选择精装版，自用选散装更实惠</li>
+                                                    <li><strong>重量预算：</strong>考虑行李限重，合理控制购买数量</li>
+                                                    <li><strong>发票保留：</strong>如需退换，记得索要购物凭证</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-time">下午 根据航班时间安排</div>
+                                    <div class="timeline-desc">
+                                        <strong>前往机场，准备登机</strong>
+                                        <div class="sub-details">
+                                            <h5 class="sub-title">✈️ 机场流程安排</h5>
+                                            <div class="airport-timeline">
+                                                <div class="airport-step">
+                                                    <div class="step-time">提前2小时</div>
+                                                    <div class="step-desc">从市区出发前往天山国际机场（约30分钟车程）</div>
+                                                </div>
+                                                <div class="airport-step">
+                                                    <div class="step-time">提前1.5小时</div>
+                                                    <div class="step-desc">办理值机手续，托运行李（注意液体和充电宝规定）</div>
+                                                </div>
+                                                <div class="airport-step">
+                                                    <div class="step-time">提前1小时</div>
+                                                    <div class="step-desc">通过安检，前往候机区</div>
+                                                </div>
+                                                <div class="airport-step">
+                                                    <div class="step-time">提前30分钟</div>
+                                                    <div class="step-desc">开始登机，准备离开美丽新疆</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="transport-options">
+                                                <h6 class="transport-title">🚗 前往机场方式</h6>
+                                                <div class="transport-grid">
+                                                    <div class="transport-card">
+                                                        <div class="transport-name">🚖 网约车/出租车</div>
+                                                        <div class="transport-price">💰 35-50元</div>
+                                                        <div class="transport-time">⏱️ 30-40分钟</div>
+                                                        <div class="transport-note">推荐：方便直达，可提前预约</div>
+                                                    </div>
+                                                    <div class="transport-card">
+                                                        <div class="transport-name">🚌 机场大巴</div>
+                                                        <div class="transport-price">💰 15元/人</div>
+                                                        <div class="transport-time">⏱️ 45-60分钟</div>
+                                                        <div class="transport-note">经济实惠，但需考虑班次时间</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 返程检查清单 -->
+                            <div class="checklist-section" id="checklist">
+                                <h4 class="section-subtitle">📋 返程检查清单</h4>
+                                <div class="checklist-grid">
+                                    <div class="checklist-category">
+                                        <h5 class="checklist-title">🎒 随身物品</h5>
+                                        <div class="checklist-items">
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                身份证、机票
+                                            </label>
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                钱包、信用卡
+                                            </label>
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                手机、充电线
+                                            </label>
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                充电宝（2万毫安以下）
+                                            </label>
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                相机、存储卡
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="checklist-category">
+                                        <h5 class="checklist-title">🧳 托运行李</h5>
+                                        <div class="checklist-items">
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                衣物、鞋子
+                                            </label>
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                洗漱用品（液体需托运）
+                                            </label>
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                新疆特产（注意重量限制）
+                                            </label>
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                纪念品、工艺品
+                                            </label>
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                三脚架、摄影器材
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="checklist-category">
+                                        <h5 class="checklist-title">📄 手续办理</h5>
+                                        <div class="checklist-items">
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                酒店退房手续完成
+                                            </label>
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                租车还车手续完成
+                                            </label>
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                押金退还确认
+                                            </label>
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                发票收据保存
+                                            </label>
+                                            <label class="checklist-item">
+                                                <input type="checkbox" class="checklist-checkbox">
+                                                <span class="checkmark"></span>
+                                                照片资料备份完成
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 旅程总结 -->
+                            <div class="trip-summary" id="summary">
+                                <h4 class="section-subtitle">💭 6日新疆之旅总结</h4>
+                                <div class="summary-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-icon">🚗</div>
+                                        <div class="stat-content">
+                                            <div class="stat-number">1500+</div>
+                                            <div class="stat-label">总里程(公里)</div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-icon">📸</div>
+                                        <div class="stat-content">
+                                            <div class="stat-number">1000+</div>
+                                            <div class="stat-label">拍摄照片</div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-icon">🏔️</div>
+                                        <div class="stat-content">
+                                            <div class="stat-number">6</div>
+                                            <div class="stat-label">主要景点</div>
+                                        </div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-icon">🍽️</div>
+                                        <div class="stat-content">
+                                            <div class="stat-number">20+</div>
+                                            <div class="stat-label">美食体验</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="journey-highlights">
+                                    <h5 class="highlights-title">✨ 难忘的旅程亮点</h5>
+                                    <div class="highlight-memories">
+                                        <div class="memory-card">
+                                            <div class="memory-icon">🌅</div>
+                                            <div class="memory-content">
+                                                <div class="memory-title">赛里木湖日出</div>
+                                                <div class="memory-desc">凌晨5点的坚持，换来终生难忘的绝美日出</div>
+                                            </div>
+                                        </div>
+                                        <div class="memory-card">
+                                            <div class="memory-icon">🏔️</div>
+                                            <div class="memory-content">
+                                                <div class="memory-title">独山子大峡谷</div>
+                                                <div class="memory-desc">大自然的鬼斧神工，震撼心灵的地质奇观</div>
+                                            </div>
+                                        </div>
+                                        <div class="memory-card">
+                                            <div class="memory-icon">🍇</div>
+                                            <div class="memory-content">
+                                                <div class="memory-title">葡萄沟清凉</div>
+                                                <div class="memory-desc">绿荫如盖的葡萄架下，品尝最甜美的葡萄</div>
+                                            </div>
+                                        </div>
+                                        <div class="memory-card">
+                                            <div class="memory-icon">🛒</div>
+                                            <div class="memory-content">
+                                                <div class="memory-title">大巴扎淘宝</div>
+                                                <div class="memory-desc">在异域风情的市场里，感受浓郁的民族文化</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="gratitude-message">
+                                    <div class="message-content">
+                                        <h5 class="message-title">🙏 感谢这次美好的新疆之旅</h5>
+                                        <p class="message-text">
+                                            六天的时间虽然不长，但新疆的壮美山河、深厚文化和淳朴民风已经深深印在心中。
+                                            从天山大峡谷的原始森林到赛里木湖的高原明珠，从独山子的地质奇观到吐鲁番的沙漠绿洲，
+                                            每一处风景都是大自然的杰作，每一次体验都是珍贵的回忆。
+                                        </p>
+                                        <p class="message-text">
+                                            希望这份详细的攻略能为您的新疆之行提供帮助，也期待您能在这片神奇的土地上
+                                            留下属于自己的美好回忆。新疆不仅仅是一个旅游目的地，更是一种生活体验，
+                                            一次心灵的洗礼。
+                                        </p>
+                                        <div class="farewell-note">
+                                            <strong>再见，美丽的新疆！期待下次再相遇！</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="day-tips">
+                                💝 <strong>记得：</strong>购买新疆特产作为伴手礼，将这份美好分享给家人朋友。安全返程，带着满满的回忆和收获！
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day Navigation -->
+                <div class="day-navigation">
+                    <a href="day5.html" class="nav-btn prev">
+                        <span class="nav-icon">←</span>
+                        <span class="nav-text">DAY 5 吐鲁番</span>
+                    </a>
+                    <a href="index.html" class="nav-btn next">
+                        <span class="nav-text">回到首页</span>
+                        <span class="nav-icon">🏠</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>🌟 新疆6日之旅圆满结束</h3>
+                <p>带着满满的回忆和收获，期待下次再相遇</p>
+                <div class="footer-info">
+                    <span>📱 移动端优化</span>
+                    <span>🗺️ 详细攻略</span>
+                    <span>📸 摄影友好</span>
+                    <span>💫 完美体验</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

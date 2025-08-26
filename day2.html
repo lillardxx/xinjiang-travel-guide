@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 2 - 天山大峡谷深度游 | 新疆6日自驾游攻略</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">DAY 2 - 天山大峡谷深度游</h1>
+            <p class="hero-subtitle">早起出发 · 天山峡谷游览 · 天鹅湖拍摄 · 返回市区</p>
+            <div class="hero-info">
+                <div class="info-item">
+                    <span class="info-icon">📅</span>
+                    <span>周四</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">☀️</span>
+                    <span>12-22°C</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🏔️</span>
+                    <span>峡谷探索</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </header>
+
+
+    <!-- Sidebar Toggle Button -->
+    <button class="sidebar-toggle" id="sidebarToggle">
+        <span class="toggle-icon">☰</span>
+    </button>
+
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3 class="sidebar-title">DAY 2 导航</h3>
+            <button class="sidebar-close" id="sidebarClose">×</button>
+        </div>
+        
+        <div class="sidebar-content">
+            <!-- Day Navigation -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-section-title">其他天数</h4>
+                <nav class="sidebar-days">
+                    <a href="day1.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 1</div>
+                        <div class="sidebar-day-desc">抵达乌市</div>
+                    </a>
+                    <a href="day2.html" class="sidebar-day-link active">
+                        <div class="sidebar-day-number">DAY 2</div>
+                        <div class="sidebar-day-desc">天山大峡谷</div>
+                    </a>
+                    <a href="day3.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 3</div>
+                        <div class="sidebar-day-desc">赛里木湖</div>
+                    </a>
+                    <a href="day4.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 4</div>
+                        <div class="sidebar-day-desc">独山子峡谷</div>
+                    </a>
+                    <a href="day5.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 5</div>
+                        <div class="sidebar-day-desc">吐鲁番</div>
+                    </a>
+                    <a href="day6.html" class="sidebar-day-link">
+                        <div class="sidebar-day-number">DAY 6</div>
+                        <div class="sidebar-day-desc">返程</div>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Page Sections -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-section-title">页面内容</h4>
+                <nav class="sidebar-nav">
+                    <a href="#timeline" class="sidebar-link">
+                        <span class="sidebar-icon">⏰</span>
+                        <span class="sidebar-text">时间安排</span>
+                    </a>
+                    <a href="#dining" class="sidebar-link">
+                        <span class="sidebar-icon">🍽️</span>
+                        <span class="sidebar-text">餐饮推荐</span>
+                    </a>
+                    <a href="#photography" class="sidebar-link">
+                        <span class="sidebar-icon">📸</span>
+                        <span class="sidebar-text">拍照攻略</span>
+                    </a>
+                    <a href="#highlights" class="sidebar-link">
+                        <span class="sidebar-icon">✨</span>
+                        <span class="sidebar-text">精彩亮点</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-wrapper" id="mainWrapper">
+        
+        <!-- Day Content -->
+        <section class="day-section">
+            <div class="container">
+                <!-- Day Card -->
+                <div class="day-card expanded" id="day2">
+                    <div class="day-header">
+                        <div class="day-number">DAY 2</div>
+                        <div class="day-date">周四</div>
+                        <div class="weather-info">
+                            <span class="weather-icon">☀️</span>
+                            <span>12-22°C</span>
+                        </div>
+                    </div>
+                    <div class="day-content">
+                        <div class="day-summary">
+                            <h3 class="day-title">天山大峡谷深度游 🏔️</h3>
+                            <div class="day-brief">早起出发 → 天山峡谷游览 → 天鹅湖拍摄 → 返回市区</div>
+                        </div>
+                        
+                        <div class="day-details active" id="day2-details">
+                            <!-- 路线概览 -->
+                            <div class="route-overview">
+                                <div class="route-item">
+                                    <span class="route-icon">🏨</span>
+                                    <span>乌鲁木齐</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">🏔️</span>
+                                    <span>天山大峡谷</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">💧</span>
+                                    <span>天鹅湖</span>
+                                </div>
+                                <div class="route-arrow">→</div>
+                                <div class="route-item">
+                                    <span class="route-icon">🏨</span>
+                                    <span>返回市区</span>
+                                </div>
+                            </div>
+                            
+                            <div class="route-info">
+                                <div class="route-detail">📍 <strong>总距离：</strong>往返70公里</div>
+                                <div class="route-detail">⏱️ <strong>总车程：</strong>1.5小时</div>
+                                <div class="route-detail">🛣️ <strong>路况：</strong>北京南路→216国道→板房沟乡→景区</div>
+                                <div class="route-detail">🗺️ <strong>优势：</strong>从维也纳酒店出发更近更便捷</div>
+                            </div>
+
+                            <div class="timeline" id="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-time">07:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>早餐+出发准备</strong>
+                                        <div class="sub-details">
+                                            <p>🥐 <strong>早餐推荐：</strong>酒店附近清真餐厅</p>
+                                            <ul>
+                                                <li><strong>清真兰州拉面馆</strong> - 北京南路28号（距酒店300米）</li>
+                                                <li><strong>新疆味道</strong> - 科学院路口（距酒店500米）</li>
+                                                <li>推荐：抓饭+奶茶（18-25元）、牛肉面（12-18元）</li>
+                                            </ul>
+                                            <p>🎒 <strong>必备物品：</strong></p>
+                                            <ul>
+                                                <li>相机+备用电池</li>
+                                                <li>防晒霜+太阳镜+帽子</li>
+                                                <li>运动鞋（峡谷内需要徒步）</li>
+                                                <li>保暖外套（山区早晚冷）</li>
+                                                <li>充足的水和零食</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-time">08:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>导航出发</strong>
+                                        <div class="sub-details">
+                                            <p>🗺️ <strong>详细自驾路线：</strong></p>
+                                            <ol>
+                                                <li>维也纳酒店 → 北京南路向北</li>
+                                                <li>上河滩快速路 → 转216国道</li>
+                                                <li>沿216国道行驶25公里（比之前近5公里）</li>
+                                                <li>板房沟乡路口右转，进入景区道路</li>
+                                                <li>再行驶8公里到达景区入口</li>
+                                            </ol>
+                                            <p>🗺️ <strong>导航建议：</strong>使用高德/百度地图导航"天山大峡谷景区"</p>
+                                            <div class="important-note">
+                                                ⛽ <strong>加油提醒：</strong>酒店附近有中石油加油站，出发前确保油箱满
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">09:00-09:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>到达景区，购票入园</strong>
+                                        <div class="sub-details">
+                                            <p>🎫 <strong>门票信息：</strong></p>
+                                            <ul>
+                                                <li>成人票：75元/人</li>
+                                                <li>区间车：35元/人（推荐购买）</li>
+                                                <li>学生/老人：半价优惠</li>
+                                            </ul>
+                                            <p>🅿️ <strong>停车：</strong>景区入口免费停车场</p>
+                                            <div class="photo-tip">
+                                                📸 <strong>拍照点1：</strong>景区大门处，天山雪峰背景
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">09:30-12:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>峡谷核心区域游览</strong>
+                                        <div class="sub-details">
+                                            <p>🏞️ <strong>游览路线：</strong></p>
+                                            <ol>
+                                                <li><strong>照壁山观景台</strong>（30分钟）
+                                                    <div class="photo-tip">📸 最佳机位：观景台左侧，广角镜头拍摄峡谷全景</div>
+                                                </li>
+                                                <li><strong>峡谷栈道徒步</strong>（60分钟）
+                                                    <div class="photo-tip">📸 光影拍摄：10:00-11:00阳光斜射，岩壁层次最佳</div>
+                                                </li>
+                                                <li><strong>森林氧吧区</strong>（45分钟）
+                                                    <div class="photo-tip">📸 人像拍摄：原始森林中的自然人像</div>
+                                                </li>
+                                            </ol>
+                                            <div class="important-note">
+                                                ⚠️ <strong>安全提醒：</strong>栈道湿滑注意安全，不要越过护栏
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">12:00-13:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>午餐时间</strong>
+                                        <div class="sub-details">
+                                            <p>🍽️ <strong>餐饮选择：</strong></p>
+                                            <ul>
+                                                <li><strong>景区餐厅</strong> - 人均40-60元，菜品一般</li>
+                                                <li><strong>自带野餐</strong> - 推荐，在天鹅湖畔用餐</li>
+                                                <li><strong>农家乐</strong> - 景区外2公里，人均30元</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">13:00-15:30</div>
+                                    <div class="timeline-desc">
+                                        <strong>天鹅湖重点拍摄</strong>
+                                        <div class="sub-details">
+                                            <p>📸 <strong>天鹅湖拍摄攻略：</strong></p>
+                                            <ul>
+                                                <li><strong>最佳机位：</strong>湖东岸观景台
+                                                    <div class="gps-location">📍 GPS: 43.5897°N, 87.0583°E</div>
+                                                </li>
+                                                <li><strong>拍摄技巧：</strong>
+                                                    <ul>
+                                                        <li>使用偏振镜消除水面反光</li>
+                                                        <li>广角镜头拍摄湖面全景</li>
+                                                        <li>长焦镜头拍摄远山倒影</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>最佳光线：</strong>13:30-14:30侧光效果最佳</li>
+                                            </ul>
+                                            <div class="photo-composition">
+                                                💡 <strong>构图建议：</strong>前景安排岸边石头，中景是湖水，远景是雪山
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">15:30-16:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>离开景区，返程准备</strong>
+                                        <div class="sub-details">
+                                            <p>🛍️ <strong>伴手礼：</strong>景区入口小摊（蜂蜜、干果）</p>
+                                            <p>⛽ <strong>加油建议：</strong>返程路上在216国道加油站补充</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-time">17:00</div>
+                                    <div class="timeline-desc">
+                                        <strong>回到乌鲁木齐市区</strong>
+                                        <div class="sub-details">
+                                            <p>🏨 <strong>酒店休息：</strong>整理照片，为明天长途做准备</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 餐饮推荐 -->
+                            <div class="dining-section" id="dining">
+                                <h4 class="section-subtitle">🍽️ 今日餐饮推荐</h4>
+                                <div class="restaurant-grid">
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-name">清真兰州拉面馆</div>
+                                        <div class="restaurant-info">早餐推荐 · 人均20元</div>
+                                        <div class="restaurant-address">📍 北京南路28号（距酒店步行5分钟）</div>
+                                        <div class="restaurant-dishes">招牌：抓饭、奶茶、牛肉面</div>
+                                    </div>
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-name">景区农家乐</div>
+                                        <div class="restaurant-info">午餐推荐 · 人均35元</div>
+                                        <div class="restaurant-address">📍 景区外2公里处</div>
+                                        <div class="restaurant-dishes">招牌：土鸡、野菜、山泉水</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 拍照攻略 -->
+                            <div class="photo-section" id="photography">
+                                <h4 class="section-subtitle">📸 专业拍照攻略</h4>
+                                <div class="photo-spots">
+                                    <div class="photo-spot">
+                                        <div class="spot-name">照壁山观景台</div>
+                                        <div class="spot-time">最佳时间：09:30-10:30（晨光侧射）</div>
+                                        <div class="spot-equipment">推荐设备：广角镜头24-70mm</div>
+                                        <div class="spot-tip">💡 构图：三分法，峡谷在画面下三分之一</div>
+                                    </div>
+                                    <div class="photo-spot">
+                                        <div class="spot-name">天鹅湖倒影</div>
+                                        <div class="spot-time">最佳时间：13:30-14:30（无风时水面平静）</div>
+                                        <div class="spot-equipment">推荐设备：偏振镜+三脚架</div>
+                                        <div class="spot-tip">💡 技巧：使用偏振镜消除反光，突出倒影</div>
+                                    </div>
+                                    <div class="photo-spot">
+                                        <div class="spot-name">峡谷栈道</div>
+                                        <div class="spot-time">最佳时间：10:00-11:00（光影对比强烈）</div>
+                                        <div class="spot-equipment">推荐设备：长焦镜头70-200mm</div>
+                                        <div class="spot-tip">💡 角度：从下往上仰拍，突出峡谷的深邃</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="highlights" id="highlights">
+                                <div class="highlight-item">🌲 原始森林峡谷</div>
+                                <div class="highlight-item">💧 天鹅湖倒影</div>
+                                <div class="highlight-item">📸 光影效果绝佳</div>
+                                <div class="highlight-item">🏔️ 天山雪峰远眺</div>
+                                <div class="highlight-item">🚶 栈道徒步体验</div>
+                            </div>
+
+                            <div class="day-tips">
+                                <div class="tips-grid">
+                                    <div class="tip-item">
+                                        <span class="tip-icon">👟</span>
+                                        <span><strong>鞋子：</strong>防滑运动鞋，栈道可能湿滑</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">🧥</span>
+                                        <span><strong>穿衣：</strong>洋葱式穿衣，山区温差大</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">📱</span>
+                                        <span><strong>信号：</strong>景区内信号较弱，提前下载离线地图</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">⏰</span>
+                                        <span><strong>时间：</strong>控制游览时间，为明天长途做准备</span>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-icon">🏨</span>
+                                        <span><strong>酒店优势：</strong>维也纳酒店位置更佳，距离景区更近</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day Navigation -->
+                <div class="day-navigation">
+                    <a href="day1.html" class="nav-btn prev">
+                        <span class="nav-icon">←</span>
+                        <span class="nav-text">DAY 1 抵达乌市</span>
+                    </a>
+                    <a href="day3.html" class="nav-btn next">
+                        <span class="nav-text">DAY 3 赛里木湖</span>
+                        <span class="nav-icon">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>🌟 天山大峡谷的壮美令人震撼</h3>
+                <p>安全驾驶，享受旅程中的每一个瞬间</p>
+                <div class="footer-info">
+                    <span>📱 移动端优化</span>
+                    <span>🗺️ 详细攻略</span>
+                    <span>📸 摄影友好</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
